@@ -1,0 +1,108 @@
+html {
+  background-color:  white;
+  font-family: sans-serif;
+}
+body{
+  margin:0;
+}
+.one-page{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  justify-content: center;
+}
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin:auto;
+  min-height:5rem;
+}
+.nav-link{
+  margin:auto;
+  color:white;
+  font-size:1.4rem;
+}
+.intro-bg {
+  transform: skewY(-4deg);
+  transform-origin: 0%;
+  background: linear-gradient(232.94deg, rgba(219, 140, 220, 0.65) 25.87%, rgba(252, 216, 253, 0.65) 25.87%, rgba(203, 120, 204, 0.65) 62.45%, rgba(255, 255, 255, 0) 62.61%), #9C009E;
+  position: absolute;
+  width: 100vw;
+  max-width: 100%;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.back {
+  transform: skewY(-1deg);
+  transform-origin: -150%;
+  z-index: -2;
+  background: black;
+}
+.intro{
+  padding-left:10%;
+  padding-right:10%;
+  color:white;
+  padding-bottom:3%;
+  position: relative;
+}
+.slogan{
+  display:flex;
+  flex-direction: column;
+  max-width:50%;
+}
+#slog2{
+  margin-right:0;
+}
+.articles{
+  background-color:  black;
+  color:white;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.partners{
+  background-color:  white;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.newsletter{
+  background-color:  black;
+  color:white;
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.nextEvents{
+  background-color:  white;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+.footer{
+  background-color:  black;
+  color:white;
+  padding-left:4%;
+  padding-right:4%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+
+
+a{
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  .nav-link {
+    display:block;
+    clear:both;
+    font-size: 0.7rem;
+  }
+}
