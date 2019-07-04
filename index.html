@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <title>Learning2gether</title>
     <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
         <div class="one-page">
                 <div class="intro" id='intro'>
-                        <div class="intro-bg"></div>
-                        <div class="intro-bg back"></div>
-                        <div class="navbar">
-                                <div class="nav-links">
-                                        <a class="nav-link" href='#articles'>News</a>
-                                        <a class="nav-link"  href='#partners'>Partners</a>
-                                        <a  class="nav-link" href='#'>L2G</a>
-                                        <a class="nav-link"  href='#newsletter'>Newsletter</a>
-                                        <a class="nav-link" href='#nextEvents'>Calendar</a>
+                        <div class="intro-backg"></div>
+                        <div class="intro-backg back"></div>
+                        <div class="navigatebar">
+                                <div class="navigate-links">
+                                        <a class="navigate-link" href='#articles'>News</a>
+                                        <a class="navigate-link"  href='#partners'>Partners</a>
+                                        <a  class="navigate-link" href='#'>L2G</a>
+                                        <a class="navigate-link"  href='#newsletter'>Newsletter</a>
+                                        <a class="navigate-link" href='#nextEvents'>Calendar</a>
                                 </div>
                         </div>
+                        <div class='container'>
                         <section class='slogan' id='slog1'>
                                   <h1>This is how you learn !</h1>
                                   <p>
@@ -31,10 +33,13 @@
                                         "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness."
                                 </p>
                         </section>
+                        </div>
                 </div>
+
                 <div class="articles" id='articles'>
+                  <div class='container'>
                       <section class='article'>
-                              <img class='articleImg' src="https://www.10wallpaper.com/wallpaper/1366x768/1205/earth_image-HD_Space_Wallpapers_1366x768.jpg" alt="event image"/>
+                              <img class='img-fluid' src="https://www.10wallpaper.com/wallpaper/1366x768/1205/earth_image-HD_Space_Wallpapers_1366x768.jpg" alt="event image"/>
                               <div class='articleContent'>
                                     <h2>Article 1</h2>
                                     <p class='articleDesc'>
@@ -42,8 +47,12 @@
                                             <a href="https://www.medium.com" class="mediumLink" target="blank">Read More</a>
                                     </p>
                               </div>
+
                         </section>
+                        </div>
+                        <div class='container'>
                         <section class='article'>
+                            <img class='img-fluid articleImg' src="https://www.10wallpaper.com/wallpaper/1366x768/1205/earth_image-HD_Space_Wallpapers_1366x768.jpg" alt="event image"/>
                             <div class='articleContent'>
                                     <h2>Article 2</h2>
                                     <p class='articleDesc'>
@@ -51,20 +60,22 @@
                                             <a href="https://www.medium.com" class="mediumLink" target="blank">Read More</a>
                                     </p>
                               </div>
-                              <img class='articleImg2' src="https://www.10wallpaper.com/wallpaper/1366x768/1205/earth_image-HD_Space_Wallpapers_1366x768.jpg" alt="event image"/>
+
                           </section>
+                          </div>
                 </div>
                 <div class="partners" id='partners'>
                         <div class="partner-bg2"></div>
                         <div class="partner-bg2 back2"></div>
+
                         <div class="contentUp">
+                          <div class='container'>
                                   <img src="https://ijcnlp2008.org/images/buttons-clipart-arrow-11.png" class='arrow1' alt=""/>
-                                  <div class='wholePartner' id='wholePartner1'>
-                                        <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/Band-Logo.png" class="partnerLogo" alt="Partner logo"/>
+                                        <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/Band-Logo.png" class="img-fluid" alt="Partner logo"/>
                                         <p class='partnerContent'  id='partner1'>
                                           "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.
-                                    </div>
-                          </div>
+                            </div>
+                        </div>
                           <div class="contentDown">
                                     <div class='wholePartner' >
                                           <p class='partnerContent'  id='partner2'>
@@ -85,10 +96,12 @@
                       <img src="http://imppao.free.fr/images/2016/16dc_logo_instragram.png" class='socialLogo' alt="">
                       <img src="https://cdn1.iconfinder.com/data/icons/somacro___dpi_social_media_icons_by_vervex-dfjq/500/twitter-old.png" class='socialLogo' alt="">
                     </div>
-                    <div class="newsletterMail">
-                      <h3>Subscribe to our NewsLetter</h3>
-                      <input type="email" name="enter email address" value=""/>
-                      <button type="submit">Send</button>
+                    <form>
+                    <div class="form-group">
+                            <h3>Subscribe to our NewsLetter</h3>
+                            <input type="email" class='form-control' name="enter email address" value=""/>
+                            <button class='btn btn-dark'>Send</button>
+                      </form>
                     </div>
                 </div>
                 <div class="nextEvents" id='nextEvents'>
@@ -105,5 +118,8 @@
                       <h1>LOGOS</h1>
                 </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

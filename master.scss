@@ -1,5 +1,7 @@
+
+
 html {
-  background-color:  white;
+//  background-color:  white;
   font-family: sans-serif;
 }
 body{
@@ -11,7 +13,7 @@ body{
   margin:auto;
   justify-content: center;
 }
-.nav-links{
+.navigate-links{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -19,15 +21,15 @@ body{
   min-height:5rem;
   font-weight: bold;
 }
-.nav-link{
+.navigate-link{
   margin:auto;
   color:white;
   font-size:1.4rem;
 }
-.nav-link:hover{
+.navigate-link:hover{
   color:black;
 }
-.intro-bg {
+.intro-backg {
   transform: skewY(-4deg);
   transform-origin: 0%;
   background: linear-gradient(232.94deg, rgba(219, 140, 220, 0.65) 25.87%, rgba(252, 216, 253, 0.65) 25.87%, rgba(203, 120, 204, 0.65) 62.45%, rgba(255, 255, 255, 0) 62.61%), #9C009E;
@@ -43,7 +45,7 @@ body{
   transform: skewY(-1deg);
   transform-origin: -150%;
   z-index: -2;
-  background: black;
+  background: #262626;
 }
 .intro{
   padding-left:10%;
@@ -56,7 +58,8 @@ body{
   display:flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width:50%;
+  //max-width:50%;
+  min-width:45%;
   padding-left:10%;
   padding-right:10%;
 }
@@ -86,20 +89,24 @@ body{
   border-bottom-width: thin;
   //max-height:10%;
 }
-.articleImg{
-  border-left-style: solid;
-  border-left-color: purple;
-  padding-left:2%;
+.img-fluid{
+  width:30%;
+  height:30%;
 }
-.articleImg2{
-  border-right-style: solid;
-  border-right-color: purple;
-  padding-right:2%;
+
+@media screen and (max-width:500px){
+  .article{
+    flex-wrap:wrap;
+  }
+  .img-fluid{
+    max-width:80% !important;
+  }
 }
+
 .articleContent{
   display:flex;
   flex-direction: column;
-  max-width:50%;
+  min-width:70%;
   margin-left:3%;
   margin-right:3%;
 }
@@ -213,8 +220,8 @@ body{
   justify-content: space-around;
 }
 .socialLogo{
-  width:5%;
-  height:80%;
+  width:50px;
+  height:50px;
   border-radius:50%;
 }
 .KeepInTouch{
@@ -282,17 +289,14 @@ h1{
 filter:drop-shadow(5px 5px 0.1px black);
 font-weight: bold;
 }
-input{
-  margin-top:2%;
-  max-height:1rem;
-}
-button{
-  max-height:2rem;
-  margin-top:2%;
+.form-group{
+  display:flex;
+  justify-content: center;
 }
 
+
 @media screen and (max-width: 500px) {
-  .nav-link {
+  .navigate-link {
     display:block;
     clear:both;
     font-size: 0.7rem;
